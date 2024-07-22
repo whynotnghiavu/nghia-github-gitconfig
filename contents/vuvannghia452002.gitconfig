@@ -1,0 +1,11 @@
+
+[user]
+name = vuvannghia452002
+email = 165627743+vuvannghia452002@users.noreply.github.com
+
+[github]
+user = vuvannghia452002
+
+[core]
+sshCommand = "ssh -i ~/.ssh/vuvannghia452002"
+    

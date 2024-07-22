@@ -1,0 +1,9 @@
+[user]
+name = whynotnghiavu
+email = 176358444+whynotnghiavu@users.noreply.github.com
+
+[github]
+user = whynotnghiavu
+
+[core]
+sshCommand = "ssh -i ~/.ssh/whynotnghiavu"
