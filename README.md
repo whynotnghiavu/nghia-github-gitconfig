@@ -1,1 +1,0 @@
-# nghia-github-gitconfig
