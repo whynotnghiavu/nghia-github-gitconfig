@@ -1,3 +1,3 @@
 <!-- ok -->
 Link file, folder
-output
+Nhóm các file vào folder _output_
