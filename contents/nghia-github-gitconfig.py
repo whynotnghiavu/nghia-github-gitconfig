@@ -79,7 +79,6 @@ sshCommand = "ssh -i ~/.ssh/""" + username + """"
         file.write(content)
 
 
-
 def create_symlink(list_username):
     list_gitconfig = []
 
@@ -87,7 +86,7 @@ def create_symlink(list_username):
     for username in list_username:
         print(f"🚀username = {username}")
         list_gitconfig.append(f"{username}.gitconfig")
-    
+
     for path in list_gitconfig:
         print(f"🚀path = {path}")
         symlink_path = os.path.expanduser(f"~/{path}")
@@ -100,7 +99,6 @@ def create_symlink(list_username):
                 print(f"Symbolic link created at: {symlink_path}")
             except OSError as e:
                 print(f"Failed to create symbolic link: {e}")
-
 
 
 if __name__ == "__main__":
@@ -118,13 +116,8 @@ if __name__ == "__main__":
     print(f"👉 Step: create_git_folder")
     create_git_folder(list_username)
 
-
-
     print(f"👉 Step: create_gitconfig_global")
     create_gitconfig_global(list_username)
-
-
-
 
     for username in list_username:
         print(f"👉 Step: create_gitconfig_file")
@@ -132,5 +125,3 @@ if __name__ == "__main__":
 
     print(f"👉 Step: create_symlink")
     create_symlink(list_username)
-  
-
