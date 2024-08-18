@@ -1,3 +1,4 @@
+
 [user]
 name = company20206205
 email = 175070038+company20206205@users.noreply.github.com
@@ -7,3 +8,4 @@ user = company20206205
 
 [core]
 sshCommand = "ssh -i ~/.ssh/company20206205"
+    

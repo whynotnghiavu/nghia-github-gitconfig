@@ -1,20 +1,22 @@
+
 [core]
 excludesfile = ~/.gitignore
-
+    
 [includeIf "gitdir:~/Downloads/Nghia/Git/whynotnghiavu/"]
 path = ~/whynotnghiavu.gitconfig
-
+        
 [includeIf "gitdir:~/Downloads/Nghia/Git/company20206205/"]
 path = ~/company20206205.gitconfig
-
+        
 [includeIf "gitdir:~/Downloads/Nghia/Git/20206205/"]
 path = ~/20206205.gitconfig
-
+        
 [includeIf "gitdir:~/Downloads/Nghia/Git/vvn20206205/"]
 path = ~/vvn20206205.gitconfig
-
+        
 [includeIf "gitdir:~/Downloads/Nghia/Git/hust20206205/"]
 path = ~/hust20206205.gitconfig
-
+        
 [includeIf "gitdir:~/Downloads/Nghia/Git/vuvannghia452002/"]
 path = ~/vuvannghia452002.gitconfig
+        

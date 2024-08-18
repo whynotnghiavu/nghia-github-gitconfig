@@ -86,19 +86,24 @@ def create_symlink(list_username):
     for username in list_username:
         print(f"🚀username = {username}")
         list_gitconfig.append(f"{username}.gitconfig")
+ 
+        
+
+            
 
     for path in list_gitconfig:
         print(f"🚀path = {path}")
         symlink_path = os.path.expanduser(f"~/{path}")
+        print(f"🚀symlink_path = {symlink_path}")
 
-        if os.path.exists(symlink_path):
-            print(f"The symbolic link already exists: {path}")
-        else:
-            try:
-                os.symlink(os.path.abspath(path), symlink_path)
-                print(f"Symbolic link created at: {symlink_path}")
-            except OSError as e:
-                print(f"Failed to create symbolic link: {e}")
+        try:
+            os.remove(symlink_path)
+            print(f"Đã xóa symlink: {symlink_path}")
+            os.symlink(os.path.abspath(path), symlink_path)
+            print(f"Symbolic link created at: {symlink_path}")
+        except OSError as e:
+            print(f"Failed to create symbolic link: {e}")
+
 
 
 if __name__ == "__main__":
