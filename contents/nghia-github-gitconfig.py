@@ -97,12 +97,13 @@ def create_symlink(list_username):
         print(f"🚀symlink_path = {symlink_path}")
 
         try:
-            os.remove(symlink_path)
+            if os.path.exists(symlink_path):
+                os.remove(symlink_path)
             print(f"Đã xóa symlink: {symlink_path}")
             os.symlink(os.path.abspath(path), symlink_path)
-            print(f"Symbolic link created at: {symlink_path}")
+            print(f"Tạo link: {symlink_path}")
         except OSError as e:
-            print(f"Failed to create symbolic link: {e}")
+            print(f"Lỗi: {e}")
 
 
 

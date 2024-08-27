@@ -5,9 +5,6 @@ excludesfile = ~/.gitignore
 [includeIf "gitdir:~/Downloads/Nghia/Git/whynotnghiavu/"]
 path = ~/whynotnghiavu.gitconfig
         
-[includeIf "gitdir:~/Downloads/Nghia/Git/company20206205/"]
-path = ~/company20206205.gitconfig
-        
 [includeIf "gitdir:~/Downloads/Nghia/Git/20206205/"]
 path = ~/20206205.gitconfig
         
